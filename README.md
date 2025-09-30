@@ -1,6 +1,6 @@
 # ST_PETER-Information-Managament-System
-##Capstone Project
-###REVISED THE SYSTEM
+##Capstone Project##
+###REVISED THE SYSTEM###
 
 **System Recommendatios:**
   > Use of color shal follow the rules on user interface design
