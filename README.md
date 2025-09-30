@@ -20,6 +20,7 @@
     <summary>System Recommendations:</summary>
 
 -> Use of color shal follow the rules on user interface design.
+
 -> Schedule should be automatically saved to calendar.
     
   </details>
