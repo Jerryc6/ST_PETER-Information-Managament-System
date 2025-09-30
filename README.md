@@ -1,8 +1,8 @@
 # ST_PETER-Information-Managament-System
-##Capstone Project##
-###REVISED THE SYSTEM###
+##Capstone Project
+###REVISED THE SYSTEM
 
-**System Recommendatios:**
+**System Recommendations:**
   > Use of color shal follow the rules on user interface design
   > Schedule should be automatically saved to calendar
   > Log-in: remove the black box before username and password
