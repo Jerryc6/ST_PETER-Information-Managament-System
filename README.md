@@ -2,9 +2,9 @@
 ## Capstone Project
 ### REVISED THE SYSTEM
 
-**System Recommendations:**
-  ### -> Use of color shal follow the rules on user interface design
-  ### -> Schedule should be automatically saved to calendar
+
+
+ 
   ### -> Log-in: remove the black box before username and password
   ### -> Include the services that the customer is entitled to receive under ordinary and special packages, along with the associated cost
   ### -> Remove the select confirmation and remain the confirm button
@@ -16,3 +16,11 @@
   ### -> Make a separate list for those who availed the special and ordinary package
   ### -> Profit: include a remarks if it is paid or with outstanding balance
   ### -> Include the customers with PLAN Holder.
+  <details>
+    <summary>System Recommendations:</summary>
+
+Use of color shal follow the rules on user interface design.
+
+Schedule should be automatically saved to calendar.
+    
+  </details>
