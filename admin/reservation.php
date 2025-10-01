@@ -109,17 +109,18 @@ include('db.php')
                         <div class="panel-body">
 								<div class="form-group">
                                     <label>Type Of Service *</label>
-                                        <select name="troom"  class="form-control" required>
-											<option value selected ></option>
-                                            <option value="Ordinary Package">Ordinary Package</option> <!--15,000-->
-                                            <option value="Special Package">Special Package</option> <!--20,000-->
-											<option value="Embalming">Embalming</option> <!--2,500-->
-											<option value="Funeral Car">Funeral Car</option> <!--8,000-->
-                                                
+                                        <select name="troom" id="troom" class="form-control" required>
+                                            <option value="" selected></option>
+                                            <option value="Ordinary Package">Ordinary Package</option>
+                                            <option value="Special Package">Special Package</option>
+                                            <option value="Embalming">Embalming</option>
+                                            <option value="Funeral Car">Funeral Car</option>
                                         </select>
-                                </div>
+                                        <input type="text" id="price" class="form-control" placeholder="Price" readonly>
+                                        <div id="service-details" class="mt-2"></div>
+                              </div>
 							 
-
+							 
 							 
 							  <div class="form-group">
                                             <label>Start Date</label>
@@ -214,6 +215,50 @@ include('db.php')
       <!-- Custom Js -->
     <script src="assets/js/custom-scripts.js"></script>
     
+
+
+<script>
+    const packageDetails = {
+    "Ordinary Package": {
+        services: [
+            "Basic funeral arrangement",
+            "Coffin (standard)",
+            "Preparation of body",
+            "Viewing room",
+            "Documentation assistance"
+        ],
+        price: 1500
+    },
+    "Special Package": {
+        services: [
+            "All Ordinary Package services",
+            "Premium coffin",
+            "Floral arrangements",
+            "Embalming",
+            "Funeral car (hearse)",
+            "Additional viewing days"
+        ],
+        price: 3000
+    },
+    "Embalming": {
+        services: ["Embalming service only"],
+        price: 500
+    },
+    "Funeral Car": {
+        services: ["Funeral car (hearse) only"],
+        price: 400
+    }
+};
+
+document.getElementById('troom').addEventListener('change', function() {
+    const selected = this.value;
+    const details = packageDetails[selected];
+    document.getElementById('price').value = details ? `₱${details.price}` : '';
+    document.getElementById('service-details').innerHTML = details 
+        ? `<strong>Services Included:</strong><ul>${details.services.map(s => `<li>${s}</li>`).join('')}</ul>`
+        : '';
+});
+</script>
    
 </body>
 </html>
