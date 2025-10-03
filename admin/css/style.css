@@ -74,7 +74,8 @@ p {
 
 /* ---------- LOGIN ---------- */
 #login {
-  width: 280px;
+  width: 380px;
+
 }
 
 /*#login form span {
@@ -95,12 +96,13 @@ p {
 
 
 #login form input[type="text"], input[type="password"] {
-  background-color: #ddd6d6;
+  background-color: #696767;
   border-radius: 0px 3px 3px 0px;
-  color: #000307;
+  color: #dededf;
   margin-bottom: 1em;
   padding: 0 16px;
   width: 280px;
+  font-family: italic;
 }
 
 #login form input[type="submit"] {
@@ -113,6 +115,7 @@ p {
   margin-bottom: 2em;
   text-transform: uppercase;
   width: 280px;
+  cursor: pointer;
 }
 
 #login form input[type="submit"]:hover {
@@ -249,7 +252,13 @@ p {
 	100% {margin-left: -1000px;}
 }
 .bottom {
-	width:100%; margin:0 auto; text-align:center; padding:10px 0; height:100px; position:absolute;
+	width:100%; 
+	margin:0 auto;
+	margin-top: 300px;  
+	text-align:center; 
+	padding:10px 0; 
+	height:100px; 
+	position:absolute;
 }
 .bottom h3 {color:white; font-size:30px; font-weight:bold; margin-top:45px; padding-bottom:45px;}
 .blue { color:#09c;}
