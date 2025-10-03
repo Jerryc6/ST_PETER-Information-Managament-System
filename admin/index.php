@@ -10,13 +10,8 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>ADMIN</title>
-  
-  
-     
+  <title>ADMIN</title> 
       <link rel="stylesheet" href="css/style.css">
-
-  
 </head>
 
 <body>
@@ -29,32 +24,26 @@
 	<div class="cloud x5"></div>
 </div>
 
+
+
  <div class="container">
 
-
       <div id="login">
-
         <form method="post">
-
+            
           <fieldset class="clearfix">
-
             <p><span class="fontawesome-user"></span><input type="text"  name="user" value="Username" onBlur="if(this.value == '') this.value = 'Username'" onFocus="if(this.value == 'Username') this.value = ''" required></p> <!-- JS because of IE support; better: placeholder="Username" -->
             <p><span class="fontawesome-lock"></span><input type="password" name="pass"  value="Password" onBlur="if(this.value == '') this.value = 'Password'" onFocus="if(this.value == 'Password') this.value = ''" required></p> <!-- JS because of IE support; better: placeholder="Password" -->
             <p><input type="submit" name="sub"  value="Press Enter"></p>
-
           </fieldset>
-
         </form>
-
-       
-
       </div> <!-- end login -->
-
     </div>
     <br>
-    <div class="bottom">  <h3><a href="../index.php">ST PETER ADMIN HOMEPAGE</a></h3></div>
-  
-  
+    <div class="bottom">  
+        <h3><a href="../index.php">ST PETER ADMIN HOMEPAGE</a></h3>
+    </div>
+
 </body>
 </html>
 
@@ -87,3 +76,4 @@
       }
    }
 ?>
+
